@@ -1,0 +1,26 @@
+Electrical Characteristics of IGN4:
+Output Current: 20A cont, 40A pulsed
+Switching Time: 12us
+Input threshold: 1V-2.4V
+Input Impedance: 15kOhm
+Primary Clamping: 410V
+Max stored coil energy at peak: 700mJ
+
+fantastic stack exchange:
+https://electronics.stackexchange.com/questions/651188/driving-an-ignition-coil-with-an-igbt-circuit
+
+ECU signals from 1500 are driven low side (12V inactive, 0V active)
+Signals are sent in and used as "power rail" for the transistor with Schottky diodes to protect and 1uF cap to smooth, ECU is open drain so should be consistent 12V, but having all signals to a rail ensures it's stable even if ECU pull up is slow (and wires are long).
+
+470ohm resistor in limits surge current from signal/protects against any ESD or load dumps. 
+10V Zener clamps the node to 10V max, protects from overvoltage. 
+LED and 680ohm resistor are to indicate ignition signal.
+10k ohm ensures IGBT remains off/ensures no signal floating. 05V Zener clamps Vge (datasheet says 10V) to safe level.
+10k to V_drv ensures clean pull up. 
+47ohm to gate controls gate charge current.
+
+IGBT handles 10-20A, flyback of 400V, and 500mJ rated energy from coil inductor. 
+
+RC snubber (10nF + 47ohm) suppresses high freq ringing.
+414V TVS limits collector voltage to 400-420V and sets spark collapse voltage. spark energy transfer rate is V = L(di/dt). Peak pulse current needs to match coil primary current (6-15A average).
+
