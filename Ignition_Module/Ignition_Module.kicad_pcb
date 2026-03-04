@@ -389,7 +389,7 @@
 		(descr "Keystone THM Miniature Test Point 5000-5004, http://www.keyelco.com/product-pdf.cfm?p=1309")
 		(tags "Through Hole Mount Test Points")
 		(property "Reference" "TP1"
-			(at -2.275 -0.05 180)
+			(at 2.5 0 180)
 			(layer "F.SilkS")
 			(uuid "c3ebad0e-d4a9-4949-9287-b3e17d53ae1b")
 			(effects
@@ -741,7 +741,7 @@
 		(descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "resistor handsolder")
 		(property "Reference" "R4"
-			(at 0 -1.5 0)
+			(at 0 1.275 0)
 			(layer "F.SilkS")
 			(uuid "e8806667-9353-424b-b401-07df2bcf2344")
 			(effects
@@ -955,7 +955,7 @@
 		(descr "Keystone THM Miniature Test Point 5000-5004, http://www.keyelco.com/product-pdf.cfm?p=1309")
 		(tags "Through Hole Mount Test Points")
 		(property "Reference" "TP4"
-			(at 0 -2.5 0)
+			(at 0 2.415 0)
 			(layer "F.SilkS")
 			(uuid "71e98bb3-08e4-4b77-85f2-5e64661a9d84")
 			(effects
@@ -1580,7 +1580,7 @@
 		(descr "Soldered wire connection, for a single 1 mm² wire, reinforced insulation, conductor diameter 1.4mm, outer diameter 3.9mm, size source Multi-Contact FLEXI-xV 1.0 (https://ec.staubli.com/AcroFiles/Catalogues/TM_Cab-Main-11014119_(en)_hi.pdf), bend radius 3 times outer diameter, generated with kicad-footprint-generator")
 		(tags "connector wire 1sqmm")
 		(property "Reference" "J12"
-			(at 2.8 0 180)
+			(at 2.075 0 180)
 			(layer "F.SilkS")
 			(uuid "2241c3b9-11c2-415e-ab2d-0f6bbfe202d6")
 			(effects
@@ -1718,6 +1718,102 @@
 				(xyz 0 0 0)
 			)
 		)
+	)
+	(footprint "LHR:MountingHole_3.2mm_M3"
+		(layer "F.Cu")
+		(uuid "25420c09-46d5-43ab-89e4-047a76bd03c1")
+		(at 133.4 83.7)
+		(descr "Mounting Hole 3.2mm, no annular, M3")
+		(tags "mounting hole 3.2mm no annular m3")
+		(property "Reference" "REF**"
+			(at 0 -4.15 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "ae841556-cb88-449f-8893-2037d20b2a17")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "MountingHole_3.2mm_M3"
+			(at 0 4.15 0)
+			(layer "F.Fab")
+			(uuid "078ff13e-57df-4a91-9ab8-f5eabf81a4e7")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3d228edd-bfe5-4df3-9cfa-4b131a50b452")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8091eaab-1f0c-4960-982b-fadc3fbd1406")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(attr exclude_from_pos_files exclude_from_bom)
+		(fp_circle
+			(center 0 0)
+			(end 3.2 0)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(fill no)
+			(layer "Cmts.User")
+			(uuid "8e88bdfb-41d3-4886-a19a-796de527bf3a")
+		)
+		(fp_circle
+			(center 0 0)
+			(end 3.45 0)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.CrtYd")
+			(uuid "82de28fc-0f19-49af-8e4e-77f60206a894")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(uuid "1fc867b9-20ac-4e9d-ab49-ec2d6f8eb8d2")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(pad "" np_thru_hole circle
+			(at 0 0)
+			(size 3.2 3.2)
+			(drill 3.2)
+			(layers "*.Cu" "*.Mask")
+			(uuid "ce509c4b-9e38-4393-92a8-232ba7f4c1eb")
+		)
+		(embedded_fonts no)
 	)
 	(footprint "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 		(layer "F.Cu")
@@ -2322,7 +2418,7 @@
 		(descr "Keystone THM Miniature Test Point 5000-5004, http://www.keyelco.com/product-pdf.cfm?p=1309")
 		(tags "Through Hole Mount Test Points")
 		(property "Reference" "TP5"
-			(at 0 -2.5 0)
+			(at 0 2.54 0)
 			(layer "F.SilkS")
 			(uuid "fbf5e6b0-cd90-43bd-a477-3819b61b1d11")
 			(effects
@@ -3307,7 +3403,7 @@
 		(descr "Soldered wire connection, for a single 1 mm² wire, reinforced insulation, conductor diameter 1.4mm, outer diameter 3.9mm, size source Multi-Contact FLEXI-xV 1.0 (https://ec.staubli.com/AcroFiles/Catalogues/TM_Cab-Main-11014119_(en)_hi.pdf), bend radius 3 times outer diameter, generated with kicad-footprint-generator")
 		(tags "connector wire 1sqmm")
 		(property "Reference" "J7"
-			(at 0 -3.15 0)
+			(at 0 3.325 0)
 			(layer "F.SilkS")
 			(uuid "9fb19080-1e0b-4c10-89dc-3733a9a010e7")
 			(effects
@@ -3453,7 +3549,7 @@
 		(descr "Keystone THM Miniature Test Point 5000-5004, http://www.keyelco.com/product-pdf.cfm?p=1309")
 		(tags "Through Hole Mount Test Points")
 		(property "Reference" "TP6"
-			(at 0 -2.5 0)
+			(at 0 2.515 0)
 			(layer "F.SilkS")
 			(uuid "c9337fd6-8a1f-410e-b751-a31ba93a71cc")
 			(effects
@@ -6279,7 +6375,7 @@
 		(descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "resistor handsolder")
 		(property "Reference" "R5"
-			(at 0 -1.43 0)
+			(at 0 1.3 0)
 			(layer "F.SilkS")
 			(uuid "0e112e84-14fe-4501-9dda-b8c70e063ffe")
 			(effects
@@ -7727,7 +7823,7 @@
 	(footprint "LHR:buff_cat"
 		(layer "F.Cu")
 		(uuid "67b0743a-4c76-4021-a692-e4a7e5b4e2aa")
-		(at 149.4 93.917481)
+		(at 148.963022 96.417481)
 		(property "Reference" "G***"
 			(at 0 0 0)
 			(layer "F.SilkS")
@@ -8890,7 +8986,7 @@
 		(descr "Soldered wire connection, for a single 1 mm² wire, reinforced insulation, conductor diameter 1.4mm, outer diameter 3.9mm, size source Multi-Contact FLEXI-xV 1.0 (https://ec.staubli.com/AcroFiles/Catalogues/TM_Cab-Main-11014119_(en)_hi.pdf), bend radius 3 times outer diameter, generated with kicad-footprint-generator")
 		(tags "connector wire 1sqmm")
 		(property "Reference" "J8"
-			(at 0 -3.15 0)
+			(at 0.025 3.125 0)
 			(layer "F.SilkS")
 			(uuid "e1e345f9-9436-4741-a0d7-a312a4562629")
 			(effects
@@ -9992,7 +10088,7 @@
 		(descr "Soldered wire connection, for a single 1 mm² wire, reinforced insulation, conductor diameter 1.4mm, outer diameter 3.9mm, size source Multi-Contact FLEXI-xV 1.0 (https://ec.staubli.com/AcroFiles/Catalogues/TM_Cab-Main-11014119_(en)_hi.pdf), bend radius 3 times outer diameter, generated with kicad-footprint-generator")
 		(tags "connector wire 1sqmm")
 		(property "Reference" "J13"
-			(at 2.8 0 180)
+			(at 2.175 0 180)
 			(layer "F.SilkS")
 			(uuid "431cc14a-7962-4de8-8331-bd9c37d542ae")
 			(effects
@@ -10138,7 +10234,7 @@
 		(descr "Soldered wire connection, for a single 1 mm² wire, reinforced insulation, conductor diameter 1.4mm, outer diameter 3.9mm, size source Multi-Contact FLEXI-xV 1.0 (https://ec.staubli.com/AcroFiles/Catalogues/TM_Cab-Main-11014119_(en)_hi.pdf), bend radius 3 times outer diameter, generated with kicad-footprint-generator")
 		(tags "connector wire 1sqmm")
 		(property "Reference" "J5"
-			(at 0 -3.15 0)
+			(at 0 3.24 0)
 			(layer "F.SilkS")
 			(uuid "6cd38137-ecbc-41f3-8924-08696b43df10")
 			(effects
@@ -10284,7 +10380,7 @@
 		(descr "Soldered wire connection, for a single 1 mm² wire, reinforced insulation, conductor diameter 1.4mm, outer diameter 3.9mm, size source Multi-Contact FLEXI-xV 1.0 (https://ec.staubli.com/AcroFiles/Catalogues/TM_Cab-Main-11014119_(en)_hi.pdf), bend radius 3 times outer diameter, generated with kicad-footprint-generator")
 		(tags "connector wire 1sqmm")
 		(property "Reference" "J11"
-			(at 2.85 0 180)
+			(at 2.075 0 180)
 			(layer "F.SilkS")
 			(uuid "ef90bb55-8ff1-4d91-8909-b4ee6bc19286")
 			(effects
@@ -10644,7 +10740,7 @@
 		(descr "Soldered wire connection, for a single 1 mm² wire, reinforced insulation, conductor diameter 1.4mm, outer diameter 3.9mm, size source Multi-Contact FLEXI-xV 1.0 (https://ec.staubli.com/AcroFiles/Catalogues/TM_Cab-Main-11014119_(en)_hi.pdf), bend radius 3 times outer diameter, generated with kicad-footprint-generator")
 		(tags "connector wire 1sqmm")
 		(property "Reference" "J9"
-			(at 2.85 0 180)
+			(at 2.025 0 180)
 			(layer "F.SilkS")
 			(uuid "45c0806b-7ce9-4bee-b00a-74e0b0f5d20c")
 			(effects
@@ -11350,7 +11446,7 @@
 		(descr "Soldered wire connection, for a single 1 mm² wire, reinforced insulation, conductor diameter 1.4mm, outer diameter 3.9mm, size source Multi-Contact FLEXI-xV 1.0 (https://ec.staubli.com/AcroFiles/Catalogues/TM_Cab-Main-11014119_(en)_hi.pdf), bend radius 3 times outer diameter, generated with kicad-footprint-generator")
 		(tags "connector wire 1sqmm")
 		(property "Reference" "J16"
-			(at -3.375 0.1 180)
+			(at 2.9 -0.025 180)
 			(layer "F.SilkS")
 			(uuid "92f6471a-2271-4695-99c8-0e8792e16b56")
 			(effects
@@ -11710,7 +11806,7 @@
 		(descr "Soldered wire connection, for a single 1 mm² wire, reinforced insulation, conductor diameter 1.4mm, outer diameter 3.9mm, size source Multi-Contact FLEXI-xV 1.0 (https://ec.staubli.com/AcroFiles/Catalogues/TM_Cab-Main-11014119_(en)_hi.pdf), bend radius 3 times outer diameter, generated with kicad-footprint-generator")
 		(tags "connector wire 1sqmm")
 		(property "Reference" "J6"
-			(at 0 -3.15 0)
+			(at 0 3.215 0)
 			(layer "F.SilkS")
 			(uuid "b346466e-e2f0-41af-bce2-b1c00c50cd9d")
 			(effects
@@ -12852,7 +12948,7 @@
 		(descr "Keystone THM Miniature Test Point 5000-5004, http://www.keyelco.com/product-pdf.cfm?p=1309")
 		(tags "Through Hole Mount Test Points")
 		(property "Reference" "TP3"
-			(at 0 -2.5 0)
+			(at 0 2.565 0)
 			(layer "F.SilkS")
 			(uuid "3f3c0756-6771-4864-95c6-798d3bf20866")
 			(effects
@@ -12990,7 +13086,7 @@
 		(descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "resistor handsolder")
 		(property "Reference" "R11"
-			(at 0 -1.5475 0)
+			(at 0 1.475 0)
 			(layer "F.SilkS")
 			(uuid "707bb16d-e3a7-4a5a-bd5e-eb8be5ce6539")
 			(effects
@@ -13564,7 +13660,7 @@
 		(descr "Soldered wire connection, for a single 1 mm² wire, reinforced insulation, conductor diameter 1.4mm, outer diameter 3.9mm, size source Multi-Contact FLEXI-xV 1.0 (https://ec.staubli.com/AcroFiles/Catalogues/TM_Cab-Main-11014119_(en)_hi.pdf), bend radius 3 times outer diameter, generated with kicad-footprint-generator")
 		(tags "connector wire 1sqmm")
 		(property "Reference" "J14"
-			(at 2.8 0 180)
+			(at 2.175 0 180)
 			(layer "F.SilkS")
 			(uuid "69538f3a-d269-4cca-9fab-d7c8b72abd42")
 			(effects
@@ -13924,7 +14020,7 @@
 		(descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "resistor handsolder")
 		(property "Reference" "R16"
-			(at 0.1 -1.4 0)
+			(at 0.05 1.375 0)
 			(layer "F.SilkS")
 			(uuid "75f62ef1-92a1-4f05-b221-50eb2e8283b4")
 			(effects
@@ -15112,7 +15208,7 @@
 		(descr "Soldered wire connection, for a single 1 mm² wire, reinforced insulation, conductor diameter 1.4mm, outer diameter 3.9mm, size source Multi-Contact FLEXI-xV 1.0 (https://ec.staubli.com/AcroFiles/Catalogues/TM_Cab-Main-11014119_(en)_hi.pdf), bend radius 3 times outer diameter, generated with kicad-footprint-generator")
 		(tags "connector wire 1sqmm")
 		(property "Reference" "J10"
-			(at 2.8 0 180)
+			(at 2.075 0 180)
 			(layer "F.SilkS")
 			(uuid "8d01c348-71ef-487b-b135-fda7d6141fd5")
 			(effects
@@ -15258,7 +15354,7 @@
 		(descr "Soldered wire connection, for a single 1 mm² wire, reinforced insulation, conductor diameter 1.4mm, outer diameter 3.9mm, size source Multi-Contact FLEXI-xV 1.0 (https://ec.staubli.com/AcroFiles/Catalogues/TM_Cab-Main-11014119_(en)_hi.pdf), bend radius 3 times outer diameter, generated with kicad-footprint-generator")
 		(tags "connector wire 1sqmm")
 		(property "Reference" "J15"
-			(at -3.375 0.1 180)
+			(at 3.1 0.1 180)
 			(layer "F.SilkS")
 			(uuid "6e451ba1-0bca-4e83-85f6-8c27b37ed044")
 			(effects
@@ -15481,6 +15577,136 @@
 		(layer "Edge.Cuts")
 		(uuid "efa1e083-9962-451b-875d-c6d754865f1a")
 	)
+	(gr_text "12V_Out"
+		(at 155.8 86.5 0)
+		(layer "F.SilkS")
+		(uuid "0590a2b1-ae52-489f-bc92-39d632e1d13e")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.2)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+	)
+	(gr_text "Sig4_Out"
+		(at 103.6 130.2 0)
+		(layer "F.SilkS")
+		(uuid "19845e5a-8967-4b59-8e3c-f8f94061e823")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.2)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+	)
+	(gr_text "Sig1_In"
+		(at 138 91.3 0)
+		(layer "F.SilkS")
+		(uuid "219796e8-1545-49f9-9cfa-ec7dceda7305")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.2)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+	)
+	(gr_text "Sig4_In"
+		(at 137.9 135.6 0)
+		(layer "F.SilkS")
+		(uuid "50723417-aa4a-49c9-af2c-86ac034b6c88")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.2)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+	)
+	(gr_text "12V_In"
+		(at 156.3 129.5 0)
+		(layer "F.SilkS")
+		(uuid "508b0487-e232-4401-8b3d-e83862d1f354")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.2)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+	)
+	(gr_text "12V"
+		(at 157.2 134.4 0)
+		(layer "F.SilkS")
+		(uuid "5b34b0fe-64d4-4c6d-8958-4961fd261405")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.2)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+	)
+	(gr_text "12V_Out"
+		(at 155.8 92.1 0)
+		(layer "F.SilkS")
+		(uuid "5fc1748e-d642-4f40-99da-ca39d38b672c")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.2)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+	)
+	(gr_text "Sig3_In"
+		(at 137.9 120.8 0)
+		(layer "F.SilkS")
+		(uuid "60eb3cb8-e5c2-45b2-b5e7-e574996930fb")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.2)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+	)
+	(gr_text "12V_Out"
+		(at 155.8 97.7 0)
+		(layer "F.SilkS")
+		(uuid "72b04c34-465f-4952-a07b-1ff26d0261ee")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.2)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+	)
+	(gr_text "Sig1_Out"
+		(at 103.5 86.1 0)
+		(layer "F.SilkS")
+		(uuid "8399855c-c5f2-4623-a4ae-ae8117816c9b")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.2)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+	)
 	(gr_text "KITTY MKI"
 		(at 149.2 138.8 0)
 		(layer "F.SilkS")
@@ -15492,6 +15718,71 @@
 				(bold yes)
 			)
 			(justify bottom)
+		)
+	)
+	(gr_text "12V_Out"
+		(at 155.8 103.3 0)
+		(layer "F.SilkS")
+		(uuid "982fd397-c7ae-4de7-a63a-97c94917bf48")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.2)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+	)
+	(gr_text "12V_In"
+		(at 156.3 123.7 0)
+		(layer "F.SilkS")
+		(uuid "afe34a4d-5544-4e65-b074-abc7b65bcc35")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.2)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+	)
+	(gr_text "Sig3_Out"
+		(at 103.5 115.6 0)
+		(layer "F.SilkS")
+		(uuid "bc813518-2e0a-4640-b7db-740f9161cd3f")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.2)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+	)
+	(gr_text "Sig2_Out"
+		(at 103.5 100.8 0)
+		(layer "F.SilkS")
+		(uuid "c5123775-44a2-4b41-be2b-19a5e3c062e9")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.2)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+	)
+	(gr_text "Sig2_In"
+		(at 138.1 106.1 0)
+		(layer "F.SilkS")
+		(uuid "d5a4eaeb-8ede-43c0-ab43-0029cec8d06d")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.2)
+				(bold yes)
+			)
+			(justify left bottom)
 		)
 	)
 	(gr_text "Kustom Ignition Timing\n & Transistor Yield"
@@ -15804,6 +16095,22 @@
 		(uuid "01874685-11b7-48e2-b62b-e24f8a0b252e")
 	)
 	(segment
+		(start 133.2 110.1)
+		(end 134.2725 110.1)
+		(width 1)
+		(layer "F.Cu")
+		(net 12)
+		(uuid "098acf3f-d9c9-49d6-b71d-6cb66221cc4c")
+	)
+	(segment
+		(start 108.9275 109.4725)
+		(end 110 109.4725)
+		(width 1)
+		(layer "F.Cu")
+		(net 12)
+		(uuid "0d7b3c41-7fe6-4e80-a5c7-87d4b25a6bd4")
+	)
+	(segment
 		(start 126.31 93.2)
 		(end 126.15 93.36)
 		(width 1)
@@ -15812,12 +16119,28 @@
 		(uuid "1fb71ecd-f44b-4589-ad92-a8f80c92d053")
 	)
 	(segment
+		(start 126.025 93.465)
+		(end 126.19 93.3)
+		(width 1)
+		(layer "F.Cu")
+		(net 12)
+		(uuid "236b7307-4b0e-48a4-a2bf-72d459d7cd4e")
+	)
+	(segment
 		(start 125.99 137.6)
 		(end 125.925 137.665)
 		(width 1)
 		(layer "F.Cu")
 		(net 12)
 		(uuid "25c94e0c-c063-4857-8cbb-8cd58c68ac79")
+	)
+	(segment
+		(start 133.1725 139.7275)
+		(end 133.3 139.6)
+		(width 1)
+		(layer "F.Cu")
+		(net 12)
+		(uuid "3abddc2a-ee72-452e-9030-5ca59b4bea8f")
 	)
 	(segment
 		(start 147.825 119.25)
@@ -15842,6 +16165,86 @@
 		(layer "F.Cu")
 		(net 12)
 		(uuid "4f282d52-df5d-401f-a4d5-d15273c49711")
+	)
+	(segment
+		(start 134.4 95.2725)
+		(end 133.3275 95.2725)
+		(width 1)
+		(layer "F.Cu")
+		(net 12)
+		(uuid "50e302d0-1597-4b00-b7eb-eb3e43f0d544")
+	)
+	(segment
+		(start 109 124.2)
+		(end 110.0725 124.2)
+		(width 1)
+		(layer "F.Cu")
+		(net 12)
+		(uuid "52dd530d-2f1e-440b-b2c9-4233eed42208")
+	)
+	(segment
+		(start 136.5 134.1)
+		(end 137.7 134.1)
+		(width 1)
+		(layer "F.Cu")
+		(net 12)
+		(uuid "578b3087-dbd6-432d-8ccd-8400c975a93b")
+	)
+	(segment
+		(start 108.8725 124.3275)
+		(end 109 124.2)
+		(width 1)
+		(layer "F.Cu")
+		(net 12)
+		(uuid "631ef24b-8ad6-4787-af0c-b4b789af22cc")
+	)
+	(segment
+		(start 125.725 137.665)
+		(end 125.89 137.5)
+		(width 1)
+		(layer "F.Cu")
+		(net 12)
+		(uuid "6422fea4-4cdc-4211-875a-9ee089f929df")
+	)
+	(segment
+		(start 136.5 119.4)
+		(end 137.7 119.4)
+		(width 1)
+		(layer "F.Cu")
+		(net 12)
+		(uuid "72044a16-3342-4575-88ef-4b281a656182")
+	)
+	(segment
+		(start 133.0725 110.2275)
+		(end 133.2 110.1)
+		(width 1)
+		(layer "F.Cu")
+		(net 12)
+		(uuid "77989bd4-888d-4cb1-b508-395e98c104a2")
+	)
+	(segment
+		(start 133.3 124.8)
+		(end 134.3725 124.8)
+		(width 1)
+		(layer "F.Cu")
+		(net 12)
+		(uuid "7eca66f7-e2c7-4217-b577-289073c1a4df")
+	)
+	(segment
+		(start 136.4 89.825)
+		(end 137.6 89.825)
+		(width 1)
+		(layer "F.Cu")
+		(net 12)
+		(uuid "83341a5b-782a-47a1-9435-efb70058b624")
+	)
+	(segment
+		(start 136.5 104.6)
+		(end 137.7 104.6)
+		(width 1)
+		(layer "F.Cu")
+		(net 12)
+		(uuid "86bec2ef-22e8-4930-abbb-afc490cdf855")
 	)
 	(segment
 		(start 125.99 122.85)
@@ -15869,11 +16272,19 @@
 	)
 	(segment
 		(start 126.09 108)
-		(end 125.925 108.165)
+		(end 129.1 108)
 		(width 1)
 		(layer "F.Cu")
 		(net 12)
-		(uuid "ae411b08-7a92-43f0-969e-77f13b90aaa6")
+		(uuid "aa190ea2-e441-4325-898b-5fbc030ac641")
+	)
+	(segment
+		(start 133.3275 95.2725)
+		(end 133.2 95.4)
+		(width 1)
+		(layer "F.Cu")
+		(net 12)
+		(uuid "add50af9-3e50-4385-b4d1-4899e31c66a5")
 	)
 	(segment
 		(start 147.85 119.225)
@@ -15892,12 +16303,52 @@
 		(uuid "bd635a5c-9f12-4a36-8dea-abeff125f63e")
 	)
 	(segment
+		(start 133.1725 124.9275)
+		(end 133.3 124.8)
+		(width 1)
+		(layer "F.Cu")
+		(net 12)
+		(uuid "bfe8c76f-4524-42d2-8d19-89ea610d8c91")
+	)
+	(segment
+		(start 133.3 139.6)
+		(end 134.3725 139.6)
+		(width 1)
+		(layer "F.Cu")
+		(net 12)
+		(uuid "caa1d7f4-ee26-45d0-bcbb-3b0f9cfb5a0d")
+	)
+	(segment
 		(start 126.09 137.4)
 		(end 125.875 137.615)
 		(width 1)
 		(layer "F.Cu")
 		(net 12)
 		(uuid "cc96569f-59b8-44dd-8581-efa75556e13a")
+	)
+	(segment
+		(start 108.8725 94.9275)
+		(end 109 94.8)
+		(width 1)
+		(layer "F.Cu")
+		(net 12)
+		(uuid "ceda0861-4433-4fa1-a83e-f7ab827ddb70")
+	)
+	(segment
+		(start 108.8 109.6)
+		(end 108.9275 109.4725)
+		(width 1)
+		(layer "F.Cu")
+		(net 12)
+		(uuid "d22c283f-dfd9-40ea-ac1a-9c71ca7d91c1")
+	)
+	(segment
+		(start 109 94.8)
+		(end 110.0725 94.8)
+		(width 1)
+		(layer "F.Cu")
+		(net 12)
+		(uuid "d2582264-e0b6-4f8d-9078-7157d9bcdced")
 	)
 	(segment
 		(start 152.5375 119.25)
@@ -15908,12 +16359,28 @@
 		(uuid "d5db0651-ad18-4b2f-bf8d-9e4267a49219")
 	)
 	(segment
-		(start 129.1 108)
+		(start 109 139)
+		(end 110.0725 139)
+		(width 1)
+		(layer "F.Cu")
+		(net 12)
+		(uuid "d864dfe5-18cd-4c4d-80ce-48660fbff86f")
+	)
+	(segment
+		(start 108.8725 139.1275)
+		(end 109 139)
+		(width 1)
+		(layer "F.Cu")
+		(net 12)
+		(uuid "e63964de-9be4-4253-8783-65993b8aeaa6")
+	)
+	(segment
+		(start 125.925 108.165)
 		(end 126.09 108)
 		(width 1)
 		(layer "F.Cu")
 		(net 12)
-		(uuid "dd0c86b1-b1e9-452d-b47f-ede4e734cf4e")
+		(uuid "ee2c22d6-0b6a-4f39-a808-42cf28752b6a")
 	)
 	(segment
 		(start 126.015 122.8)
@@ -15923,13 +16390,45 @@
 		(net 12)
 		(uuid "f3d5336c-c8a8-44c3-ae1a-25147075f892")
 	)
+	(segment
+		(start 125.825 122.965)
+		(end 125.99 122.8)
+		(width 1)
+		(layer "F.Cu")
+		(net 12)
+		(uuid "f8171d5a-87df-41b7-a264-09b6e57b3b3a")
+	)
 	(via
-		(at 110.175 109.5125)
+		(at 125.725 137.665)
 		(size 0.8)
 		(drill 0.5)
 		(layers "F.Cu" "B.Cu")
 		(net 12)
-		(uuid "16afd94c-df5c-4807-9f31-e3ca00679b26")
+		(uuid "030531fb-ac24-4e61-a152-2887de3cbb8b")
+	)
+	(via
+		(at 127.5 93.7)
+		(size 0.8)
+		(drill 0.5)
+		(layers "F.Cu" "B.Cu")
+		(net 12)
+		(uuid "04c3def0-5c97-4aae-96c8-7fcedad61aee")
+	)
+	(via
+		(at 126.025 93.465)
+		(size 0.8)
+		(drill 0.5)
+		(layers "F.Cu" "B.Cu")
+		(net 12)
+		(uuid "056a98c8-c0d1-4a02-9883-17eeca449f16")
+	)
+	(via
+		(at 124.4 137.7)
+		(size 0.8)
+		(drill 0.5)
+		(layers "F.Cu" "B.Cu")
+		(net 12)
+		(uuid "073ef286-4264-432e-bcbb-e173b39e0a9e")
 	)
 	(via
 		(at 125.925 108.165)
@@ -15940,14 +16439,6 @@
 		(uuid "2dae5fe0-97fa-4b3a-9273-711a73333ec8")
 	)
 	(via
-		(at 125.925 137.665)
-		(size 0.8)
-		(drill 0.5)
-		(layers "F.Cu" "B.Cu")
-		(net 12)
-		(uuid "2ddbb2b9-ae89-42dc-ab59-8e0f95825162")
-	)
-	(via
 		(at 152.5375 113)
 		(size 0.8)
 		(drill 0.5)
@@ -15956,7 +16447,15 @@
 		(uuid "30e962c1-67be-489e-92ae-435522cf966a")
 	)
 	(via
-		(at 136.4 89.825)
+		(at 125.825 122.965)
+		(size 0.8)
+		(drill 0.5)
+		(layers "F.Cu" "B.Cu")
+		(net 12)
+		(uuid "43a51d7f-3b16-4884-a418-edc2f5e60e31")
+	)
+	(via
+		(at 137.6 89.825)
 		(size 0.8)
 		(drill 0.5)
 		(layers "F.Cu" "B.Cu")
@@ -15964,36 +16463,28 @@
 		(uuid "4a57556c-2f17-4f40-8eb0-18dce303b7ec")
 	)
 	(via
-		(at 136.4 134.035)
+		(at 137.7 104.6)
 		(size 0.8)
 		(drill 0.5)
 		(layers "F.Cu" "B.Cu")
 		(net 12)
-		(uuid "4cc4b271-d082-46ba-819f-e6fb0b5a806c")
+		(uuid "4aa69492-a30a-4292-99d6-0c34b4e59f1d")
 	)
 	(via
-		(at 134.4 139.5375)
+		(at 133.2 95.4)
 		(size 0.8)
 		(drill 0.5)
 		(layers "F.Cu" "B.Cu")
 		(net 12)
-		(uuid "52cc0024-fe8d-4d5e-a301-2bde73bc803d")
+		(uuid "4c33de33-c8c9-4658-aa76-ec5c320efd91")
 	)
 	(via
-		(at 136.35 119.285)
+		(at 133.1725 124.9275)
 		(size 0.8)
 		(drill 0.5)
 		(layers "F.Cu" "B.Cu")
 		(net 12)
-		(uuid "6391dbe6-9614-45ce-8ff4-6b3912e84e60")
-	)
-	(via
-		(at 110.175 124.2625)
-		(size 0.8)
-		(drill 0.5)
-		(layers "F.Cu" "B.Cu")
-		(net 12)
-		(uuid "704be6df-133e-4dc5-bce8-0beda98b8de7")
+		(uuid "76204618-e330-498f-a8b9-5caca3f9bdc8")
 	)
 	(via
 		(at 152.1125 106.75)
@@ -16004,12 +16495,12 @@
 		(uuid "7e70e37a-1d1c-4359-b568-2bc3cc597fda")
 	)
 	(via
-		(at 136.4 104.535)
+		(at 133.0725 110.2275)
 		(size 0.8)
 		(drill 0.5)
 		(layers "F.Cu" "B.Cu")
 		(net 12)
-		(uuid "8be46639-f049-47a9-9834-b7dcbd57f1ca")
+		(uuid "84b7e01b-a36e-419a-ace2-6830e83d79d0")
 	)
 	(via
 		(at 152.5375 119.25)
@@ -16020,60 +16511,108 @@
 		(uuid "8d80c672-36bf-4f97-b70b-45f81869f4cb")
 	)
 	(via
-		(at 134.4 95.2725)
+		(at 137.7 134.1)
 		(size 0.8)
 		(drill 0.5)
 		(layers "F.Cu" "B.Cu")
 		(net 12)
-		(uuid "930f2896-f9cf-431f-b517-cdde0f75a22b")
+		(uuid "9688729d-16d5-4a6d-88e7-d7006c128362")
 	)
 	(via
-		(at 126.15 93.36)
+		(at 124.5 123)
 		(size 0.8)
 		(drill 0.5)
 		(layers "F.Cu" "B.Cu")
 		(net 12)
-		(uuid "979a6a70-1621-4222-a203-6aca02417ca1")
+		(uuid "9fba99f2-2ed2-4453-acf5-7396962b9179")
 	)
 	(via
-		(at 134.35 124.7875)
+		(at 127.4 108.4)
 		(size 0.8)
 		(drill 0.5)
 		(layers "F.Cu" "B.Cu")
 		(net 12)
-		(uuid "bd526d3a-f8a3-4e9f-99d0-cee230a75daf")
+		(uuid "a712dee4-a10e-4242-93bb-239b06fd5b47")
 	)
 	(via
-		(at 110.2 94.7725)
+		(at 108.8725 139.1275)
 		(size 0.8)
 		(drill 0.5)
 		(layers "F.Cu" "B.Cu")
 		(net 12)
-		(uuid "c07ab5ae-64fe-458e-9ce2-f251f9500b16")
+		(uuid "aabc0309-bea6-4c41-8b11-1a7a04668d4f")
 	)
 	(via
-		(at 110.175 139.0125)
+		(at 137.7 119.4)
 		(size 0.8)
 		(drill 0.5)
 		(layers "F.Cu" "B.Cu")
 		(net 12)
-		(uuid "d1d39d1e-fbf6-4503-9d28-499a7dc66b92")
+		(uuid "afefb1ac-54af-441f-b641-3c104fd8260c")
 	)
 	(via
-		(at 134.4 110.0375)
+		(at 127.3 123.2)
 		(size 0.8)
 		(drill 0.5)
 		(layers "F.Cu" "B.Cu")
 		(net 12)
-		(uuid "edff7823-83f6-4ce4-b04b-aaaaf5ce1ea2")
+		(uuid "b415c316-5cd5-4a52-b754-0fcc355cda18")
 	)
 	(via
-		(at 125.925 122.915)
+		(at 108.8725 94.9275)
 		(size 0.8)
 		(drill 0.5)
 		(layers "F.Cu" "B.Cu")
 		(net 12)
-		(uuid "fc2b5b36-c201-4c41-be7c-2fd935e128a1")
+		(uuid "c018840a-7dcc-44da-822b-0fece3d051d1")
+	)
+	(via
+		(at 127.2 137.9)
+		(size 0.8)
+		(drill 0.5)
+		(layers "F.Cu" "B.Cu")
+		(net 12)
+		(uuid "c1b762e9-9958-4d9a-8b44-18859777bff5")
+	)
+	(via
+		(at 124.7 93.5)
+		(size 0.8)
+		(drill 0.5)
+		(layers "F.Cu" "B.Cu")
+		(net 12)
+		(uuid "cd7f8eb4-4ca2-4d29-9653-ebe80759a0e3")
+	)
+	(via
+		(at 108.8725 124.3275)
+		(size 0.8)
+		(drill 0.5)
+		(layers "F.Cu" "B.Cu")
+		(net 12)
+		(uuid "dadadcfb-db93-4204-a9ee-413913c931a3")
+	)
+	(via
+		(at 133.1725 139.7275)
+		(size 0.8)
+		(drill 0.5)
+		(layers "F.Cu" "B.Cu")
+		(net 12)
+		(uuid "e7843da6-8c1a-42e9-b6c0-4797071c50d7")
+	)
+	(via
+		(at 108.8 109.6)
+		(size 0.8)
+		(drill 0.5)
+		(layers "F.Cu" "B.Cu")
+		(net 12)
+		(uuid "eb4849e9-4f3c-47cc-872c-6373af6eface")
+	)
+	(via
+		(at 124.6 108.2)
+		(size 0.8)
+		(drill 0.5)
+		(layers "F.Cu" "B.Cu")
+		(net 12)
+		(uuid "faef3038-d993-4d2b-87aa-f703080f8262")
 	)
 	(segment
 		(start 138.2375 103.1)
