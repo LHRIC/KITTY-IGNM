@@ -1,0 +1,12 @@
+﻿Designator,Footprint,Quantity,Value,LCSC Part #
+C1,0805,1,33uF,
+C2,0603,1,1uF,
+C3,0603,1,100nF,
+"D1, D2, D7, D8",0603,4,LED,
+"D3, D4, D5, D6",D_SOD-523,4,10V,
+"J1, J10, J11, J12, J13, J14, J15, J16, J2, J3, J4, J5, J6, J7, J8, J9",SolderWire-1sqmm_1x01_D1.4mm_OD3.9mm,16,Conn_01x01_Pin,
+"Q1, Q2, Q3, Q4",TO-263-2,4,Q_NIGBT_ECG,
+"R1, R11, R12, R2",0603,4,10k,
+"R10, R3, R4, R9",0603,4,680,
+"R5, R6, R7, R8",0603,4,470,
+"TP1, TP2, TP3, TP4, TP5, TP6",TestPoint_Keystone_5000-5004_Miniature,6,TestPoint,
