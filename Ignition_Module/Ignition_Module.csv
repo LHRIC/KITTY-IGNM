@@ -1,0 +1,13 @@
+Reference,Qty,Value,INV,Footprint
+C1,1,33uF,LHR94,Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder
+C2,1,1uF,LHR18,Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder
+"C3,C4,C5,C6",4,10nF,LHR14,Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder
+C7,1,100nF,LHR17,Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder
+"D1,D5,D8,D11",4,LED,,LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder
+"D2,D3,D7,D10",4,10V,,Diode_SMD:D_SOD-523
+"Q5,Q6,Q7,Q8",4,,,IGBT
+"R1,R7,R12,R17",4,680,LHR114,Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder
+ ,8,47,LHR1,Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder
+"R3,R8,R13,R18",4,10k,LHR8,Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder
+"R4,R5,R11,R16",4,470,LHR34,Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder
+"TP1,TP2,TP3,TP4,TP5,TP6",6,TestPoint,,TestPoint:TestPoint_Keystone_5000-5004_Miniature
